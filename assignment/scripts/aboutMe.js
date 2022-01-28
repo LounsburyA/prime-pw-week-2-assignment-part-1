@@ -1,4 +1,7 @@
 // REQUIRED FEATURES:
+
+//  -I have left in my notes, like things tried or questions i had or was asking myself
+
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 let firstName = 'Andrew'
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
@@ -41,9 +44,18 @@ else {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if (luckyNumber = 2 && adventurous === true) {
+
+/*if (luckyNumber = 2 && adventurous === true) {
   console.log('Roll the dice!');
 }
+*/
+if (luckyNumber = 2 && adventurous) {
+  console.log('Roll the dice!');
+}
+/*if (adventurous && luckyNumber = 2) {
+  console.log('Roll the dice!');
+}  - This does not work- */
+// both of these log roll the dice?
 //why does this set luckyNumber to true not 2?
 //console.log(luckyNumber);
 
