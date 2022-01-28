@@ -14,7 +14,9 @@ let luckyNumber = 3;
 // 6 - Console log this sentence, adding in the variables you created above:
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
-console.log('My name is ' + fullName + ',' + 'and I think ' + luckyNumber + ' is a winner!');
+//console.log('My name is ' + fullName + ',' + 'and I think ' + luckyNumber + ' is a winner!');
+console.log(`My name is ${fullName}, and I think ${luckyNumber} is a winner!`);
+//- just trying different methods out here.
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
@@ -67,15 +69,36 @@ else if (pets > allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
- let mostPets;
- pets = 5
- friendsPets = 2
+
+/*let mostPets;
+ pets = 5;
+ friendsPets = 2;
+
 if (pets >= friendsPets) {
   mostPets = pets;
   console.log(mostPets);}
+
 else if (friendsPets >= pets) {
-  mostPets = friendsPets
-  console.log('The most pets is: '${mostPets});}
+  mostPets = friendsPets;
+  console.log(mostPets);}
+
+else {
+  console.log('invalid');
+}*/
+
+// made improvements below
+
+let mostPets;
+ pets = 5;
+ friendsPets = 2;
+
+if (pets >= friendsPets) {
+  mostPets = pets;
+  console.log(`The most pets is: ${mostPets}.`);}
+
+else if (friendsPets >= pets) {
+  mostPets = friendsPets;
+  console.log(`The most pets is: ${mostPets}.`);}
 
 else {
   console.log('invalid');
