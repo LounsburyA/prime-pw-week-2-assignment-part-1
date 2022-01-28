@@ -16,18 +16,18 @@ let luckyNumber = 3;
 // Refer back to the videos if you need help with this one.
 console.log('My name is ' + fullName + ',' + 'and I think ' + luckyNumber + ' is a winner!');
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
-let adventurous = true
+let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
-let food = 'pizza'
+let food = 'pizza';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 5
+let pets = 5;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 2
+let friendsPets = 2;
 // 11 - Add two pets to your `pets` variable
-pets += 2
+pets += 2;
 console.log(pets);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-const allowedPets = 2
+const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
 if (adventurous = true) {
@@ -39,9 +39,12 @@ else {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if (luckyNumber = 2 && adventurous == true) {
+if (luckyNumber = 2 && adventurous === true) {
   console.log('Roll the dice!');
 }
+//why does this set luckyNumber to true not 2?
+//console.log(luckyNumber);
+
 // 15 - Write a conditional that console logs "I can have more pets!"
 //if the value of `pets` is less than the value of `allowedPets`,
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
@@ -64,7 +67,21 @@ else if (pets > allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets = 'highest value';
+ let mostPets;
+ pets = 5
+ friendsPets = 2
+if (pets >= friendsPets) {
+  mostPets = pets;
+  console.log(mostPets);}
+else if (friendsPets >= pets) {
+  mostPets = friendsPets
+  console.log('The most pets is: '${mostPets});}
+
+else {
+  console.log('invalid');
+}
+
+// struggling with this one, can't seem to figure it out
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
@@ -72,6 +89,10 @@ let mostPets = 'highest value';
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
+
+//luckyNumber has been changed on line 42 so this console logs the default
+// reset luckyNumber to 3 its original value
+luckyNumber = 3;
 switch(luckyNumber){
   case 1:
   console.log('First is the worst');
